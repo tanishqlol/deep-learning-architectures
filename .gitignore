@@ -1,1 +1,4 @@
-/.dlaenv
+.dlaenv
+__pycache__/
+*.pyc
+*.pyo
