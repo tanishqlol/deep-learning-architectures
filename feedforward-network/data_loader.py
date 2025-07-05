@@ -1,8 +1,7 @@
 import tensorflow as tf
 import numpy as np
 import matplotlib.pyplot as plt
-from typing import Tuple, Optional 
-import os
+from typing import Tuple
 
 def load_mnist_data(validation_split: float = 0.2) -> Tuple[Tuple, Tuple, Tuple]:
     """
@@ -92,7 +91,7 @@ def visualize_data_samples(x_data, y_data, num_samples: int = 10, title: str = "
         else:  # Already 28x28
             image = x_data[i]
         
-        axes[row, col].imshow(image, cmap='Blues')
+        axes[row, col].imshow(image, cmap='Greys')
         
         # Show the label
         if len(y_data[i].shape) > 0:  # One-hot encoded

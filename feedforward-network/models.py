@@ -1,5 +1,5 @@
 import keras
-from keras import layers, callbacks
+from keras import layers
 
 model_simple = keras.Sequential([
 
